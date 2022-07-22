@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.container {
+  /* border: 1px solid blue; */
+  max-width: 1000px;
+  width: 100%;
+  /* height: 90vh; */
+  margin: 70px auto 0;
+  padding: 10px;
+  font-size: 15px;
+}
+
+/* TOP SECTION STYLING || Styling the top section */
+/* Left Side Styling - Intro Text and tagline */
+.headline {
+  margin-bottom: 50px;
+  gap: 50px;
+}
+.intro-text {
+  flex-basis: 500px;
+}
+.rating-section {
+  flex-basis: 500px;
+}
+.intro-text h1 {
+  font-size: 4em;
+  margin-bottom: 20px;
+  color: hsl(300, 43%, 22%);
+}
+.intro-text p {
+  line-height: 1.5;
+  font-weight: 500;
+  color: hsl(303, 10%, 53%);
+}
+
+/* Right Side styling - ratings and stars */
+.rating-section {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+.rating-container {
+  /* border: 1px solid red; */
+  height: 80%;
+}
+.rating {
+  /* border: 1px solid green; */
+  max-width: 350px;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+.rating-reviews {
+  margin-left: 25px;
+  background-color: hsl(300, 24%, 96%);
+}
+.rating-report {
+  margin-left: 55px;
+  background-color: hsl(300, 24%, 96%);
+}
+.rating-besttech {
+  margin-left: 85px;
+  margin-bottom: 0;
+  background-color: hsl(300, 24%, 96%);
+}
+.stars {
+  color: gold;
+}
+
+/* BOTTOM SECTION STYLING || Styling the bottom section */
+.reviews {
+  /* border: 1px solid orangered; */
+  height: 240px;
+}
+.card {
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(0, 0%, 100%);
+  padding: 25px;
+  border-radius: 5px;
+  height: 150px;
+}
+.reviewer-info {
+  margin-bottom: 20px;
+  gap: 20px;
+}
+.reviewer-info > div {
+  align-self: center;
+}
+.reviewer-info img {
+  width: 50px;
+  border-radius: 50%;
+}
+.name {
+  font-weight: 700;
+}
+.verified-status {
+  color: hsl(333, 80%, 67%);
+}
+.card p {
+  line-height: 1.3;
+}
+.card:nth-child(2) {
+  margin-top: 20px;
+}
+.card:nth-child(3) {
+  margin-top: 40px;
+}
+
+/* MEDIA QUERIES */
+/* screens below 1000px */
+
+@media screen and (max-width: 1000px) {
+  .container {
+    max-width: 1000px;
+    width: 95%;
+    margin: 70px auto 0;
+    padding: 10px;
+    font-size: 15px;
+    height: 240vh;
+  }
+  /* TOP SECTION STYLING || Styling the top section */
+  .headline.flex {
+    flex-direction: column;
+    margin-bottom: 50px;
+    /* gap: 50px; */
+  }
+  .intro-text h1 {
+    /* font-size: 4em; */
+    /* margin-bottom: 20px; */
+    /* color: hsl(300, 43%, 22%); */
+    text-align: center;
+  }
+  .intro-text p {
+    /* line-height: 1.5; */
+    /* font-weight: 500; */
+    /* color: hsl(303, 10%, 53%); */
+    text-align: center;
+  }
+  .intro-text {
+    flex-basis: unset;
+  }
+  .rating {
+    /* display: block; */
+    flex-direction: column;
+    gap: 0px;
+    width: 90%;
+  }
+  .rating-section {
+    margin-left: 0;
+    display: unset;
+    flex-basis: unset;
+  }
+  .rating-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .rating-reviews {
+    margin-left: 0px;
+  }
+  .rating-report {
+    margin-left: 0px;
+  }
+  .rating-besttech {
+    margin-left: 0px;
+    margin-bottom: 0;
+  }
+
+  /* BOTTOM SECTION STYLING  */
+  .reviews {
+    flex-direction: column;
+  }
+  .card:nth-child(1) {
+    margin-top: 10px;
+  }
+  .card:nth-child(2) {
+    margin-top: 10px;
+  }
+  .card:nth-child(3) {
+    margin-top: 10px;
+  }
+}
